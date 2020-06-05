@@ -3,12 +3,13 @@
 public class Destructable : MonoBehaviour
 {
     public GameObject destroyedVersion;
-    public Vector3 translocation;
-    public void swapToBroken()
+    Vector3 translocation = new Vector3(-4, 0, -4);
+    public void swapToBroken(GameObject hitObject)
     {
         Debug.Log("Enter swaptobroken");
-        Instantiate(destroyedVersion, transform.position + translocation, transform.rotation);
-        Destroy(gameObject);
+        Debug.Log(hitObject.transform.position);
+        Instantiate(destroyedVersion, hitObject.transform.position + translocation, hitObject.transform.rotation);
+        Destroy(hitObject);
         Debug.Log("Exit swaptobroken");
     }
 }

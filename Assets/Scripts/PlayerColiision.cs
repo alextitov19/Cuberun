@@ -7,7 +7,7 @@ public class PlayerColiision : MonoBehaviour {
         {
             if (collisionInfo.collider.tag == "Obstacle")
              {
-                FindObjectOfType<Destructable>().swapToBroken();
+                FindObjectOfType<Destructable>().swapToBroken(collisionInfo.collider.gameObject);
                 GetComponent<PlayerMovement>().enabled = false;
                 FindObjectOfType<GameManager>().endGame();
              }
