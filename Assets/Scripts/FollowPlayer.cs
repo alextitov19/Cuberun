@@ -4,7 +4,13 @@ public class FollowPlayer : MonoBehaviour
 {
     public Transform player;
     public Vector3 offset;
- 
+    public Vector3 rotation;
+
+
+    private void Start()
+    {
+        transform.eulerAngles = transform.eulerAngles + rotation;
+    }
 
     void Update()
     {
