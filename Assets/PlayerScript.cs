@@ -11,6 +11,8 @@ public class PlayerScript : MonoBehaviour
     public Text xpText;
 
     XmlDocument playerDataXml;
+    XmlElement Coins;
+    XmlElement XP;
 
     private Player player;
 
@@ -26,10 +28,12 @@ public class PlayerScript : MonoBehaviour
         TextAsset xmlTextAsset = Resources.Load<TextAsset>("playerData");
         playerDataXml = new XmlDocument();
         playerDataXml.LoadXml(xmlTextAsset.text);
+        Coins = playerDataXml.SelectSingleNode("Player")["Coins"];
+        XP = playerDataXml.SelectSingleNode("Player")["XP"];
         player = new Player
         {
-            coins = int.Parse(playerDataXml.SelectSingleNode("Player")["Coins"].InnerText),
-            xp = int.Parse(playerDataXml.SelectSingleNode("Player")["XP"].InnerText)
+            coins = int.Parse(Coins.InnerText),
+            xp = int.Parse(XP.InnerText)
         };
         Debug.Log("Successfully loaded");
     }
@@ -40,6 +44,17 @@ public class PlayerScript : MonoBehaviour
         scoreText.text = transform.position.z.ToString("0");
         coinsText.text = player.coins.ToString();
         xpText.text = player.xp.ToString();
+    }
+
+    public void AddCoins(int n)
+    {
+        Debug.Log("Went into addCoins");
+        player.coins += n;
+    }
+
+    public void AddXP(int n)
+    {
+        player.xp += n;
     }
 }
 
