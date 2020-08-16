@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        LoadData();
+
     }
 
     // Update is called once per frame
@@ -42,24 +43,15 @@ public class Player : MonoBehaviour
 
     public void SaveData()
     {
-        //Debug.Log("Entered SaveData()");
-        //playerDataXml.SelectSingleNode("Player/Coins").InnerText = player.coins.ToString();
-        //playerDataXml.SelectSingleNode("Player/XP").InnerText = player.xp.ToString();
-        //string filePath = "Assets/Resources/playerData.xml";
-        //if (File.Exists(filePath))
-        //{
-        //    Debug.Log("File found at path");
-        //    using (TextWriter sw = new StreamWriter(filePath, false, System.Text.Encoding.UTF8)) //Set encoding
-        //    {
-        //        playerDataXml.Save(sw);
-        //    }
-        //} else
-        //{
-        //    Debug.Log("No file at path");
-        //}
+        SaveSystem.SavePlayer(this);
+    }
 
+    public void LoadData()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
 
-
+        coins = data.coins;
+        xp = data.xp;
     }
 }
 
