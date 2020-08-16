@@ -7,8 +7,9 @@ public class PlayerCollision : MonoBehaviour {
 
     private void Awake()
     {
-        player = gameObject.GetComponent<Player>();
-        Debug.Log("PS successfully inited");
+        player = new Player();
+        player.LoadData();
+        Debug.Log("PLayer successfully inited");
     }
 
     void OnCollisionEnter(Collision collisionInfo)

@@ -1786,24 +1786,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1477267202}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1477267204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477267203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f396c9b830557574e8a2944ab75525b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 492018134}
-  coinsText: {fileID: 1976354032}
-  xpText: {fileID: 1733089136}
-  coins: 0
-  xp: 0
-  currentLevel: 0
 --- !u!114 &1477267205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1817,6 +1799,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructable: {fileID: 0}
+--- !u!114 &1477267206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477267203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192872205e9b1494d86cd5096c8eb203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  coinsText: {fileID: 0}
+  xpText: {fileID: 0}
 --- !u!4 &1506268349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5901610682156425356, guid: c1eedfe904b63a343930213b8417f3e8,
