@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Player>
+  <Coins>1</Coins>
+  <XP>5</XP>
+  <CurrentLevel>1</CurrentLevel>
+</Player>

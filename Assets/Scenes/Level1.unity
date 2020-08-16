@@ -1778,8 +1778,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2143514834, guid: 801b1388b9bade44f844c64cc39c8535, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 801b1388b9bade44f844c64cc39c8535, type: 3}
 --- !u!1 &1477267203 stripped
 GameObject:
@@ -1802,6 +1801,9 @@ MonoBehaviour:
   scoreText: {fileID: 492018134}
   coinsText: {fileID: 1976354032}
   xpText: {fileID: 1733089136}
+  coins: 0
+  xp: 0
+  currentLevel: 0
 --- !u!114 &1477267205
 MonoBehaviour:
   m_ObjectHideFlags: 0
