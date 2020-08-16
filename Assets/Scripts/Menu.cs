@@ -16,6 +16,6 @@ public class Menu : MonoBehaviour
 
     public void StoreClicked()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Store");
     }
 }

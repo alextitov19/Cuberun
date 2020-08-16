@@ -3,11 +3,11 @@
 public class PlayerCollision : MonoBehaviour {
 
     public Destructable destructable;
-    Player ps;
+    Player player;
 
     private void Awake()
     {
-        ps = gameObject.GetComponent<Player>();
+        player = gameObject.GetComponent<Player>();
         Debug.Log("PS successfully inited");
     }
 
@@ -23,9 +23,8 @@ public class PlayerCollision : MonoBehaviour {
             if (collisionInfo.collider.tag == "Coin")
             {
                 Destroy(collisionInfo.collider.gameObject);
-                ps.AddCoins(1);
-                ps.AddXP(5);
-                ps.SaveData();
+                player.AddCoins(1);
+                player.AddXP(5);
             }
     }
    

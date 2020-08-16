@@ -41,6 +41,19 @@ public class Player : MonoBehaviour
         xp += n;
     }
 
+    public void SubtractCoins(int n)
+    {
+        Debug.Log("Went into addCoins");
+        coins -= n;
+        SaveData();
+    }
+
+    public void SubtractXP(int n)
+    {
+        xp -= n;
+        SaveData();
+    }
+
     public void SaveData()
     {
         SaveSystem.SavePlayer(this);
