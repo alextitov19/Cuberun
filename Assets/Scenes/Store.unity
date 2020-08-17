@@ -2418,9 +2418,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ae0bf40434f4442a5438fa132a36f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slowMoPrice: 5
-  twoxPrice: 20
-  invincibilityPrice: 50
+  slowMoPrice: 1
+  twoxPrice: 1
+  invincibilityPrice: 1
+  slowMoText: {fileID: 105964775}
+  twoxText: {fileID: 1081312410}
+  invincibilityText: {fileID: 1742045027}
 --- !u!1 &1898730620
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,9 @@ public class Player
     public int coins;
     public int xp;
     public int currentLevel;
+    public int perkSlowMoAmount;
+    public int perk2xAmount;
+    public int perkInvinvibilityAmount;
 
     public void AddCoins(int n)
     {
@@ -39,6 +42,45 @@ public class Player
         SaveData();
     }
 
+    public void AddPerk(string s)
+    {
+        if(s == "SlowMo")
+        {
+            perkSlowMoAmount++;
+        } else if(s == "2x")
+        {
+            perk2xAmount++;
+        } else if(s == "Invincibility")
+        {
+            perkInvinvibilityAmount++;
+        } else
+        {
+            Debug.LogError("String s = " + s);
+        }
+        SaveData();
+    }
+
+    public void SubtractPerk(string s)
+    {
+        if (s == "SlowMo")
+        {
+            perkSlowMoAmount--;
+        }
+        else if (s == "2x")
+        {
+            perk2xAmount--;
+        }
+        else if (s == "Invincibility")
+        {
+            perkInvinvibilityAmount--;
+        }
+        else
+        {
+            Debug.LogError("String s = " + s);
+        }
+        SaveData();
+    }
+
     public void SaveData()
     {
         Debug.Log("Went into SaveData");
@@ -51,6 +93,9 @@ public class Player
 
         coins = data.coins;
         xp = data.xp;
+        perkSlowMoAmount = data.perkSlowMoAmount;
+        perk2xAmount = data.perk2xAmount;
+        perkInvinvibilityAmount = data.perkInvinvibilityAmount;
     }
 }
 
