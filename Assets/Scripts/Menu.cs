@@ -6,12 +6,12 @@ public class Menu : MonoBehaviour
 {
    public void PlayClicked ()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("EquipPerks");
     }
 
     public void CustomizeClicked()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("EquipPerks");
     }
 
     public void StoreClicked()

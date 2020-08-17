@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EquipPerks : MonoBehaviour
@@ -18,15 +19,9 @@ public class EquipPerks : MonoBehaviour
         invincibilityTotalText.text = "Total: " + player.perkInvinvibilityAmount.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void AddSlowMoPerk()
     {
-        if(int.Parse(slowMoSelectedText.text) < 3)
+        if(int.Parse(slowMoSelectedText.text) < 3 && int.Parse(slowMoSelectedText.text) < player.perkSlowMoAmount)
         {
             slowMoSelectedText.text = (int.Parse(slowMoSelectedText.text) + 1).ToString();
         }
@@ -50,7 +45,7 @@ public class EquipPerks : MonoBehaviour
 
     public void Add2xPerk()
     {
-        if (int.Parse(twoxSelectedText.text) < 3)
+        if (int.Parse(twoxSelectedText.text) < 3 && int.Parse(twoxSelectedText.text) < player.perk2xAmount)
         {
             twoxSelectedText.text = (int.Parse(twoxSelectedText.text) + 1).ToString();
         }
@@ -74,7 +69,7 @@ public class EquipPerks : MonoBehaviour
 
     public void AddInvincibilityPerk()
     {
-        if (int.Parse(invincibilitySelectedText.text) < 3)
+        if (int.Parse(invincibilitySelectedText.text) < 3 && int.Parse(invincibilitySelectedText.text) < player.perkInvinvibilityAmount)
         {
             invincibilitySelectedText.text = (int.Parse(invincibilitySelectedText.text) + 1).ToString();
         }
@@ -96,5 +91,14 @@ public class EquipPerks : MonoBehaviour
         }
     }
 
+
+    public void PlayButtonPressed()
+    {
+        player.perkSlowMoAmount -= int.Parse(slowMoSelectedText.text);
+        player.perk2xAmount -= int.Parse(twoxSelectedText.text);
+        player.perkInvinvibilityAmount -= int.Parse(invincibilitySelectedText.text);
+        player.SaveData();
+        SceneManager.LoadScene("Level1");
+    }
 
 }
