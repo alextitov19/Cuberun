@@ -48,5 +48,53 @@ public class EquipPerks : MonoBehaviour
         }
     }
 
+    public void Add2xPerk()
+    {
+        if (int.Parse(twoxSelectedText.text) < 3)
+        {
+            twoxSelectedText.text = (int.Parse(twoxSelectedText.text) + 1).ToString();
+        }
+        else
+        {
+            Debug.Log("Too many 2x perks selected; amount selected = " + int.Parse(twoxSelectedText.text));
+        }
+    }
+
+    public void Subtract2xPerk()
+    {
+        if (int.Parse(twoxSelectedText.text) > 0)
+        {
+            twoxSelectedText.text = (int.Parse(twoxSelectedText.text) - 1).ToString();
+        }
+        else
+        {
+            Debug.Log("Too little 2x perks selected; amount selected = " + int.Parse(twoxSelectedText.text));
+        }
+    }
+
+    public void AddInvincibilityPerk()
+    {
+        if (int.Parse(invincibilitySelectedText.text) < 3)
+        {
+            invincibilitySelectedText.text = (int.Parse(invincibilitySelectedText.text) + 1).ToString();
+        }
+        else
+        {
+            Debug.Log("Too many invincibility perks selected; amount selected = " + int.Parse(invincibilitySelectedText.text));
+        }
+    }
+
+    public void SubtractInvincibilityPerk()
+    {
+        if (int.Parse(invincibilitySelectedText.text) > 0)
+        {
+            invincibilitySelectedText.text = (int.Parse(invincibilitySelectedText.text) - 1).ToString();
+        }
+        else
+        {
+            Debug.Log("Too little invincibility perks selected; amount selected = " + int.Parse(invincibilitySelectedText.text));
+        }
+    }
+
 
 }
