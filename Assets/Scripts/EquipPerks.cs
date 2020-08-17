@@ -26,7 +26,26 @@ public class EquipPerks : MonoBehaviour
 
     public void AddSlowMoPerk()
     {
+        if(int.Parse(slowMoSelectedText.text) < 3)
+        {
+            slowMoSelectedText.text = (int.Parse(slowMoSelectedText.text) + 1).ToString();
+        }
+        else
+        {
+            Debug.Log("Too many slowmo perks selected; amount selected = " + int.Parse(slowMoSelectedText.text));
+        }
+    }
 
+    public void SubtractSlowMoPerk()
+    {
+        if (int.Parse(slowMoSelectedText.text) > 0)
+        {
+            slowMoSelectedText.text = (int.Parse(slowMoSelectedText.text) - 1).ToString();
+        }
+        else
+        {
+            Debug.Log("Too little slowmo perks selected; amount selected = " + int.Parse(slowMoSelectedText.text));
+        }
     }
 
 
