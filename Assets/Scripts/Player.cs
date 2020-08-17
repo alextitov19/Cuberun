@@ -15,6 +15,9 @@ public class Player
     public int perkSlowMoAmount;
     public int perk2xAmount;
     public int perkInvinvibilityAmount;
+    public int perkSlowMoSelected;
+    public int perk2xSelected;
+    public int perkInvinvibilitySelected;
 
     public void AddCoins(int n)
     {
@@ -96,6 +99,9 @@ public class Player
         perkSlowMoAmount = data.perkSlowMoAmount;
         perk2xAmount = data.perk2xAmount;
         perkInvinvibilityAmount = data.perkInvinvibilityAmount;
+        perkSlowMoSelected = data.perkSlowMoSelected;
+        perk2xSelected = data.perk2xSelected;
+        perkInvinvibilitySelected = data.perkInvinvibilitySelected;
     }
 }
 

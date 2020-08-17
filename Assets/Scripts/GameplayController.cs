@@ -17,6 +17,7 @@ public class GameplayController : MonoBehaviour
     {
         player = new Player();
         player.LoadData();
+        Debug.Log("Player loaded in with SlowMo = " + player.perkSlowMoSelected + ", 2x = " + player.perk2xSelected + ", Invincibility = " + player.perkInvinvibilitySelected);
 
     }
 

@@ -11,6 +11,9 @@ public class PlayerData
     public int perkSlowMoAmount;
     public int perk2xAmount;
     public int perkInvinvibilityAmount;
+    public int perkSlowMoSelected;
+    public int perk2xSelected;
+    public int perkInvinvibilitySelected;
 
     public PlayerData(Player player)
     {
@@ -20,5 +23,8 @@ public class PlayerData
         perkSlowMoAmount = player.perkSlowMoAmount;
         perk2xAmount = player.perk2xAmount;
         perkInvinvibilityAmount = player.perkInvinvibilityAmount;
+        perkSlowMoSelected = player.perkSlowMoSelected;
+        perk2xSelected = player.perk2xSelected;
+        perkInvinvibilitySelected = player.perkInvinvibilitySelected;
     }
 }

@@ -95,8 +95,11 @@ public class EquipPerks : MonoBehaviour
     public void PlayButtonPressed()
     {
         player.perkSlowMoAmount -= int.Parse(slowMoSelectedText.text);
+        player.perkSlowMoSelected = int.Parse(slowMoSelectedText.text);
         player.perk2xAmount -= int.Parse(twoxSelectedText.text);
+        player.perk2xSelected = int.Parse(twoxSelectedText.text);
         player.perkInvinvibilityAmount -= int.Parse(invincibilitySelectedText.text);
+        player.perkInvinvibilitySelected = int.Parse(invincibilitySelectedText.text);
         player.SaveData();
         SceneManager.LoadScene("Level1");
     }
