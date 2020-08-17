@@ -5,20 +5,25 @@ using UnityEngine.UI;
 
 public class PerksStore : MonoBehaviour
 {
-    public Text slowMoText, twoxText, invincibilityText;
+    public int slowMoPrice, twoxPrice, invincibilityPrice;
 
     Player player;
 
     private void Start()
     {
-        player = gameObject.GetComponent<Player>();
+        player = new Player();
+        player.LoadData();
+    }
+
+    private void Update()
+    {
         player.LoadData();
     }
     public void SlowMoPurchase()
     {
-        if (player.coins >= int.Parse(slowMoText.text))
+        if (player.coins >= slowMoPrice)
         {
-            player.SubtractCoins(int.Parse(slowMoText.text));
+            player.SubtractCoins(slowMoPrice);
         } else
         {
             Debug.Log("Not enough coins to purchase SlowMoPerk");
@@ -27,9 +32,9 @@ public class PerksStore : MonoBehaviour
 
     public void TwoxPurchase()
     {
-        if (player.coins >= int.Parse(twoxText.text))
+        if (player.coins >= twoxPrice)
         {
-            player.SubtractCoins(int.Parse(twoxText.text));
+            player.SubtractCoins(twoxPrice);
         }
         else
         {
@@ -39,9 +44,9 @@ public class PerksStore : MonoBehaviour
 
     public void InvincibilityPurchase()
     {
-        if (player.coins >= int.Parse(invincibilityText.text))
+        if (player.coins >= invincibilityPrice)
         {
-            player.SubtractCoins(int.Parse(invincibilityText.text));
+            player.SubtractCoins(invincibilityPrice);
         }
         else
         {

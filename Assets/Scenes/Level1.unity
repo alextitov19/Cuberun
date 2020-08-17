@@ -1811,9 +1811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 192872205e9b1494d86cd5096c8eb203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  coinsText: {fileID: 0}
-  xpText: {fileID: 0}
+  scoreText: {fileID: 492018134}
+  coinsText: {fileID: 1976354032}
+  xpText: {fileID: 1733089136}
 --- !u!4 &1506268349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5901610682156425356, guid: c1eedfe904b63a343930213b8417f3e8,

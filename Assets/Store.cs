@@ -8,8 +8,6 @@ public class Store : MonoBehaviour
 
     public GameObject perksBackground, skinsBackground;
     public Text coinsText, xpText;
-    int coins, xp;
-
 
     Player player;
 
@@ -17,14 +15,13 @@ public class Store : MonoBehaviour
     {
         player = new Player();
         player.LoadData();
-        coins = player.coins;
-        xp = player.xp;
     }
 
     private void Update()
     {
-        //coinsText.text = player.coins.ToString();
-        //xpText.text = player.xp.ToString();
+        player.LoadData();
+        coinsText.text = player.coins.ToString();
+        xpText.text = player.xp.ToString();
     }
     public void DisplayPerksManu()
     {
