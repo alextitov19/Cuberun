@@ -17,11 +17,13 @@ public class Player
     {
         Debug.Log("Went into addCoins");
         coins += n;
+        SaveData();
     }
 
     public void AddXP(int n)
     {
         xp += n;
+        SaveData();
     }
 
     public void SubtractCoins(int n)
@@ -39,6 +41,7 @@ public class Player
 
     public void SaveData()
     {
+        Debug.Log("Went into SaveData");
         SaveSystem.SavePlayer(this);
     }
 

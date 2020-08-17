@@ -23,6 +23,7 @@ public class GameplayController : MonoBehaviour
 
     void Update()
     {
+        player.LoadData();
         scoreText.text = transform.position.z.ToString("0");
         coinsText.text = player.coins.ToString();
         xpText.text = player.xp.ToString();
