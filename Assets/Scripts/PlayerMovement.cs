@@ -7,10 +7,19 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 200f;
     public float sidewaysForce = 500f;
 
+    Player player;
+
     // Start is called before the first frame update
     void Start()
     {
         rb.AddForce(0, 200, 500);
+        player = new Player();
+        player.LoadData();
+        for(int i = 0; i < player.perkSlowMoSelected; i++)
+        {
+            forwardForce  *= 0.9f;
+            sidewaysForce  *= 0.9f;
+        }
     }
 
     // Update is called once per frame
