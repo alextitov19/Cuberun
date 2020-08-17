@@ -24,7 +24,7 @@ public class PlayerCollision : MonoBehaviour {
             if (collisionInfo.collider.tag == "Coin")
             {
                 Destroy(collisionInfo.collider.gameObject);
-                player.AddCoins(1);
+                player.AddCoins(5);
                 player.AddXP(5);
             }
     }
