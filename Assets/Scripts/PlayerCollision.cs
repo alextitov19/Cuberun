@@ -36,12 +36,17 @@ public class PlayerCollision : MonoBehaviour {
                 }
             }
 
-            if (collisionInfo.collider.tag == "Coin")
-            {
-                Destroy(collisionInfo.collider.gameObject);
-                player.AddCoins(5 * multiplier);
-                player.AddXP(5 * multiplier);
-            }
+            
     }
-   
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "Coin")
+        {
+            Destroy(collider.gameObject);
+            player.AddCoins(5 * multiplier);
+            player.AddXP(5 * multiplier);
+        }
+    }
+
 }
