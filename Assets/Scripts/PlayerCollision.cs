@@ -7,6 +7,7 @@ public class PlayerCollision : MonoBehaviour {
     Player player;
 
     int multiplier = 1;
+    int extraLives = 0;
 
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class PlayerCollision : MonoBehaviour {
         {
             multiplier *= 2;
         }
+        extraLives = player.perkInvinvibilitySelected;
     }
 
     void OnCollisionEnter(Collision collisionInfo)
@@ -24,9 +26,15 @@ public class PlayerCollision : MonoBehaviour {
             if (collisionInfo.collider.tag == "Obstacle")
              {
                 FindObjectOfType<Destructable>().swapToBroken(collisionInfo.collider.gameObject);
-                GetComponent<PlayerMovement>().enabled = false;
-                FindObjectOfType<GameManager>().endGame();
-             }
+                if(extraLives == 0)
+                {
+                    GetComponent<PlayerMovement>().enabled = false;
+                    FindObjectOfType<GameManager>().endGame();
+                } else
+                {
+                    extraLives--;
+                }
+            }
 
             if (collisionInfo.collider.tag == "Coin")
             {
