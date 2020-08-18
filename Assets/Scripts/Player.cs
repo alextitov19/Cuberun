@@ -96,6 +96,7 @@ public class Player
 
         coins = data.coins;
         xp = data.xp;
+        currentLevel = data.currentLevel;
         perkSlowMoAmount = data.perkSlowMoAmount;
         perk2xAmount = data.perk2xAmount;
         perkInvinvibilityAmount = data.perkInvinvibilityAmount;

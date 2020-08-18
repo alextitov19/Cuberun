@@ -101,7 +101,7 @@ public class EquipPerks : MonoBehaviour
         player.perkInvinvibilityAmount -= int.Parse(invincibilitySelectedText.text);
         player.perkInvinvibilitySelected = int.Parse(invincibilitySelectedText.text);
         player.SaveData();
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level" + player.currentLevel);
     }
 
 }
