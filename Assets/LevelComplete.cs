@@ -16,8 +16,6 @@ public class LevelComplete : MonoBehaviour
         player.LoadData();
         player.currentLevel++;
         player.SaveData();
-        player.LoadData();
-        Debug.Log("New currentLevel = " + player.currentLevel);
     }
     public void PlayClicked()
     {
