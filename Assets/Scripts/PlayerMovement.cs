@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
+        transform.eulerAngles = new Vector3(-90, 45, 0);
+
         if (Input.GetKey("d") || RightButtonManager.rightButtonPressed == true)
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
