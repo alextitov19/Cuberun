@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Store : MonoBehaviour
 {
@@ -33,5 +34,10 @@ public class Store : MonoBehaviour
     {
         perksBackground.SetActive(false);
         skinsBackground.SetActive(true);
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
