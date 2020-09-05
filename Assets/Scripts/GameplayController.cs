@@ -8,7 +8,6 @@ public class GameplayController : MonoBehaviour
 {
     public Text scoreText;
     public Text coinsText;
-    public Text xpText;
 
     Player player;
 
@@ -27,6 +26,5 @@ public class GameplayController : MonoBehaviour
         player.LoadData();
         scoreText.text = transform.position.z.ToString("0");
         coinsText.text = player.coins.ToString();
-        xpText.text = player.xp.ToString();
     }
 }
