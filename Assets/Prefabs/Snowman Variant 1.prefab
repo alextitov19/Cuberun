@@ -29,6 +29,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0167033, y: 0.01671552, z: 0.03644051}
   m_Center: {x: 0, y: 0, z: 0.018}
+--- !u!114 &-1467467696627020677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892328946604927180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192872205e9b1494d86cd5096c8eb203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  coinsText: {fileID: 0}
 --- !u!114 &2143514833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +58,19 @@ MonoBehaviour:
   rb: {fileID: 2143514832}
   forwardForce: 3000
   sidewaysForce: 50
+--- !u!114 &-5947153397724326347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892328946604927180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c488a06e674a164ebf1ff9a1055cc37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructable: {fileID: 0}
 --- !u!1001 &9170416690291290565
 PrefabInstance:
   m_ObjectHideFlags: 0
