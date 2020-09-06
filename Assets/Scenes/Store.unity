@@ -371,6 +371,7 @@ GameObject:
   - component: {fileID: 369789588}
   - component: {fileID: 369789587}
   - component: {fileID: 369789586}
+  - component: {fileID: 369789589}
   m_Layer: 5
   m_Name: 2xButton
   m_TagString: Untagged
@@ -491,6 +492,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369789584}
   m_CullTransparentMesh: 0
+--- !u!114 &369789589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369789584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &662181004
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.5}
-  m_EffectDistance: {x: 0, y: -2}
+  m_EffectDistance: {x: 2, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!1 &849414649
 GameObject:
@@ -1461,6 +1477,7 @@ GameObject:
   - component: {fileID: 1199848682}
   - component: {fileID: 1199848681}
   - component: {fileID: 1199848680}
+  - component: {fileID: 1199848683}
   m_Layer: 5
   m_Name: SlowMoButton
   m_TagString: Untagged
@@ -1581,6 +1598,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199848678}
   m_CullTransparentMesh: 0
+--- !u!114 &1199848683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199848678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1319674897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,7 +2153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.5}
-  m_EffectDistance: {x: 0, y: -2}
+  m_EffectDistance: {x: 2, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!1 &1627445084
 GameObject:
@@ -2335,7 +2367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0.5}
-  m_EffectDistance: {x: 0, y: -2}
+  m_EffectDistance: {x: 2, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!1 &1742045025
 GameObject:
@@ -2795,6 +2827,7 @@ GameObject:
   - component: {fileID: 2081508663}
   - component: {fileID: 2081508662}
   - component: {fileID: 2081508661}
+  - component: {fileID: 2081508664}
   m_Layer: 5
   m_Name: InvincibilityButton
   m_TagString: Untagged
@@ -2915,6 +2948,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081508659}
   m_CullTransparentMesh: 0
+--- !u!114 &2081508664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081508659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2081639752
 GameObject:
   m_ObjectHideFlags: 0
