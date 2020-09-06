@@ -3,12 +3,11 @@ guid: 4696862b58f175f4b8f86461ebfa23e5
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
+  fontSize: 200
+  forceTextureCase: -1
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Yanone Kaffeesatz
   fontNames:
   - Yanone Kaffeesatz
   fallbackFontReferences:

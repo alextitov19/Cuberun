@@ -3,12 +3,11 @@ guid: 77e8ee767f3873444804cf8cc841cdbc
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
+  fontSize: 200
+  forceTextureCase: -1
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Open Sans Condensed
   fontNames:
   - Open Sans Condensed
   fallbackFontReferences:
