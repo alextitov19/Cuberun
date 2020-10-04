@@ -4,6 +4,12 @@ public class PlayerCollision : MonoBehaviour {
 
     public Destructable destructable;
 
+    [SerializeField]
+
+    private AudioClip glassShatterAudio;
+
+    private AudioSource audio = GetComponent<AudioSource>();
+
     Player player;
 
     int multiplier = 1;
@@ -25,7 +31,9 @@ public class PlayerCollision : MonoBehaviour {
     {
             if (collisionInfo.collider.tag == "Obstacle")
              {
-                FindObjectOfType<Destructable>().swapToBroken(collisionInfo.collider.gameObject);
+            audioSource.clip = glassShatterAudio;
+            audioSource.Play();
+            FindObjectOfType<Destructable>().swapToBroken(collisionInfo.collider.gameObject);
                 if(extraLives == 0)
                 {
                     GetComponent<PlayerMovement>().enabled = false;
