@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour {
 
     private AudioClip glassShatterAudio;
 
-    private AudioSource audio = GetComponent<AudioSource>();
+//    private AudioSource audio = GetComponent<AudioSource>();
 
     Player player;
 
@@ -31,8 +31,8 @@ public class PlayerCollision : MonoBehaviour {
     {
             if (collisionInfo.collider.tag == "Obstacle")
              {
-            audioSource.clip = glassShatterAudio;
-            audioSource.Play();
+  //          audioSource.clip = glassShatterAudio;
+ //           audioSource.Play();
             FindObjectOfType<Destructable>().swapToBroken(collisionInfo.collider.gameObject);
                 if(extraLives == 0)
                 {
